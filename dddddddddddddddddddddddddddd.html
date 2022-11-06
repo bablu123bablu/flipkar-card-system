@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      
+      <style>
+            *{
+                  margin:0px;
+                  padding:0px;
+
+            }
+     
+
+            nav{
+                  background-color: rgb(0, 190, 180);
+                  height: 100px;
+                  justify-content: space-around;
+                  display: flex;
+                  align-items: center;
+
+            }
+            .logo{
+                 
+                  width: 40%;
+                  margin-left: 180px;
+                  font-family: 'Courier New', Courier, monospace;
+
+
+            }
+            .main{
+                  width:60%;
+                  justify-content: space-around;
+                  display: flex;
+
+
+
+
+                  
+
+
+            }
+            .main a{
+                  color:white;
+                  font-size: larger;
+                  text-decoration: none;
+                  position: relative;
+            }
+            .main a:before{
+                  content: "";
+                  position: absolute;
+                  left:0;
+                  top:100%;
+                  width:0%;
+                  height: 5px;
+                  background-color: black;
+                  transition: all 0.3s linear;
+                  
+
+            }
+            .main a:hover:before{
+                  width:100%;
+                  background-color: blue;
+
+            }
+           
+           
+            .container{
+                  width: 100%;
+            }
+            .wrapper{
+                  width: 90%;
+                  height: 100vh;
+                  margin: auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-around;
+
+            }
+            .text{
+                  flex-basis: 45%;
+
+            }
+            .all-images{
+                  height: 80vh;
+                  display: flex;
+            }
+            .small-images{
+                  display: flex;
+                  flex-direction: column;
+            }
+            .small-images img{
+                  height:  19vh;
+                  margin-bottom: 9px;
+                  cursor: pointer;
+                  opacity: 0.6;
+
+
+            }
+            .small-images img:hover{
+                  opacity: 1;
+
+            }
+            .main-images img{
+                  height: 70%;
+
+            }
+            p{
+                  margin-bottom: 20px;
+
+            }
+            .brand{
+                  background-color: #008000;
+                  width: fit-content;
+                /*  color:aliceblue;*/
+                  font-size: 12px;
+                  padding:2px 5px;
+
+            }
+            h2{
+                  font-size: 35px;
+                  color:aqua;
+                  margin-bottom: 20px;
+
+            }
+            .review{
+                  background-color: #008000;
+                  display: inline-block;
+                  color:aliceblue;
+                  padding:4px;
+                  border-radius: 5px;
+                  font-size: 15px;
+
+
+            }
+            .review.fa{
+                  counter-reset: #fff;
+            }
+            .price{
+                  color:rgb(207, 51, 51);
+                  font-size: 26px;
+                  font-size: bold;
+                  padding-top: 10px;
+                  padding-right: 10px;
+
+            }
+            .price-box{
+                  display: flex;
+
+            }
+            .input{
+                  width: 30px;
+                  border:ipx solid green;
+                  font-weight: bold;
+                  text-align: center;
+            }
+            button{
+                  width: 130px;
+                  color:#fff;
+                  font-size: 15px;
+                  outline: none;
+                  border: 0;
+                  border-radius: 5px;
+                  padding:10px 15px;
+                  background-color:orange;
+                  box-sizing: border-box;
+                  cursor: pointer;
+            }
+            button .fa{
+                  margin:  10px;
+
+            }
+            .buy{
+                  background-color: red;
+            }
+
+            
+           
+            
+
+      </style>
+</head>
+<body>
+     <nav>
+      <div class="logo">
+            <h1>BABLU E-COMMERCE (STORE)</h1>
+      </div>
+      <div class="main">
+            <a href="www.google.com">HOME</a>
+            <a href="www.facebook.com">ABOUT</a>
+            <a href="www.india.com">BOOK</a>
+            <a href="www.iimt.com">IIMT</a>
+
+      </div>
+     </nav> 
+     
+     
+     
+      <div class="container">
+            <div class="wrapper">
+                  <div class="product-box">
+                        <div class="all-images">
+                        <div class="small-images">
+                              <img src="https://images-eu.ssl-images-amazon.com/images/I/41HSkMxLEJL._SX300_SY300_QL70_FMwebp_.jpg" onclick="clickimg(this)">
+                              <img src="https://images-eu.ssl-images-amazon.com/images/I/41q7YUp4H1L._SX300_SY300_QL70_FMwebp_.jpg" onclick="clickimg(this)">
+                              <img src="https://images-eu.ssl-images-amazon.com/images/I/71AvQd3VzqL._AC_UL160_SR160,160_.jpg" onclick="clickimg(this)">
+                              <img src="https://images-eu.ssl-images-amazon.com/images/I/41HSkMxLEJL._SX300_SY300_QL70_FMwebp_.jpg" onclick="clickimg(this)">
+                             <img src=" https://m.media-amazon.com/images/I/614AipEWSIL._SL1500_.jpg ">
+            </div>      
+            <div class="main-images">
+                  <img src="https://images-eu.ssl-images-amazon.com/images/I/41HSkMxLEJL._SX300_SY300_QL70_FMwebp_.jpg" id ="imagebox">
+
+            </div>
+
+            </div>
+            
+
+                        </div>
+                        <div class="text">
+                              <div class="content">
+                                    <p class="brand">Brand:Apple</p>
+                                    <h1>APPLE iphone 12(pro,mar)</h1>
+                                    <div class="review">
+                                          <span>(4.6)</span>
+                                          <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="price-box">
+                                          <p class="price">&#8377;544646</p>
+                                          <strike>&#8377;599994999</strike>
+                                    </div>
+                                    <p>Size: <select name="size">
+                                          <option value="select  colour">select colour</option>
+                                           <option value="black">blcak</option>
+                                          <option value="blue">blue</option>
+                                          <option value="green">green</option>
+                                          <option value="orange">orange</option>
+
+                                    </select></p>
+                                    <p>Quantity<input type="text" value="1"</p>
+                                    <button>
+                                          <span class=" fa fa-shoping-cart"></span>
+                                         add to card
+                                    </button>
+                                    <button class="buy">
+                                          <span class="fa fa-shoping-cart"></span>
+                                          Buy now
+
+                                    </button>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <script>
+
+            function clickimg(smallImg){
+                  var fullImg = document.getElementById('imagebox');
+                  fullImg.src = smallImg.src
+            }
+
+
+      </script>
+
+
+</body>
+</html>
